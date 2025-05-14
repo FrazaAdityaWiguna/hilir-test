@@ -6,19 +6,25 @@ This project involves developing a comprehensive dashboard to monitor and track 
 
 ### ⚡ Running the Web Application
 
-1. **Install dependencies:**
+1. **Setup Env:**
+
+   ```bash
+   NEXT_PUBLIC_SECRET_KEY=YOUR_SECRET
+   ```
+
+2. **Install dependencies:**
 
    ```bash
    npm install
    ```
 
-2. **Prepare Husky:**
+3. **Prepare Husky:**
 
    ```bash
    npm run prepare
    ```
 
-3. **Start the development server:**
+4. **Start the development server:**
 
    ```bash
    npm run dev
