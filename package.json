@@ -6,30 +6,35 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "json-server": "json-server --watch ./src/dummy/db.json --port 8000"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.1.0",
     "@mui/material": "^7.1.0",
-    "@tanstack/react-query": "^5.76.0",
+    "apexcharts": "^4.7.0",
     "axios": "^1.9.0",
+    "crypto-js": "^4.2.0",
+    "json-server": "^1.0.0-beta.3",
+    "lottie-react": "^2.4.1",
+    "material-react-table": "^3.2.1",
     "next": "15.3.2",
     "react": "^19.0.0",
+    "react-apexcharts": "^1.7.0",
     "react-dom": "^19.0.0",
-    "react-toastify": "^11.0.5"
+    "react-ga4": "^2.1.0",
+    "react-toastify": "^11.0.5",
+    "recharts": "^2.15.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@tanstack/eslint-plugin-query": "^5.74.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }
