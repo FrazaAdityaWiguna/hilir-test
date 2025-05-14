@@ -6,8 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "json-server": "json-server --watch ./src/dummy/db.json --port 8000"
+    "lint": "next lint ./src ./components --ext .ts,.tsx,.js --no-cache --fix --max-warnings 10",
+    "json-server": "json-server --watch ./src/dummy/db.json --port 8000",
+    "prepare": "husky",
+    "type-check": "tsc --pretty --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -29,11 +31,15 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.26.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.2",
-    "typescript": "^5"
+    "eslint": "^9.26.0",
+    "globals": "^16.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "typescript": "^5",
+    "typescript-eslint": "^8.32.1"
   }
 }
