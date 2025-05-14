@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Project Name
 
-## Getting Started
+A brief description of the project, its purpose, and its key features.
 
-First, run the development server:
+## ✅ How to Run the Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### ⚡ Running the Web Application
+
+1. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at **[http://localhost:3000](http://localhost:3000)**.
+
+### 🛠️ Running the Data Server
+
+1. **Start JSON Server:**
+
+   ```bash
+   npm run json-server
+   ```
+
+   The data server will be available at **[http://localhost:8000](http://localhost:8000)**.
+
+---
+
+## 🚨 Attention - Commit Rules
+
+Follow these commit message conventions:
+
+- `feat:` For creating new features.
+- `chore:` For minor changes or maintenance tasks.
+- `fix:` For bug fixes or code corrections.
+- `refactor:` For code structure improvements without changing functionality.
+- `docs:` For updating or adding documentation.
+- `test:` For adding or updating tests.
+- `style:` For formatting, indentation, etc. (no code change).
+- `perf:` For performance improvements.
+- `revert:` For reverting previous commits.
+
+Example:
+
+```
+git commit -m "feat: Ad Performance Summary"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Husky Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses **Husky** to enforce coding standards. Please follow these rules:
 
-## Learn More
+- Maximum allowed warnings: **10**
+- Linting is enforced before each commit.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧹 ESLint Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Install the **ESLint extension** in your code editor to maintain consistent code quality.
+2. ESLint will run automatically on each commit via Husky.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Additional Commands
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Run Linter:**
+
+  ```bash
+  npm run lint
+  ```
+
+- **Format Code:**
+
+  ```bash
+  npm run format
+  ```
+
+- **Run Tests:**
+
+  ```bash
+  npm run test
+  ```
+
+---
+
+## 🌐 Environment Variables
+
+Ensure that you have a `.env` file with the following variables:
+
+```
+NEXT_PUBLIC_SECRET_KEY=YOUR_SECRET
+```
+
+## ✅ Author
+
+- [Fraza Aditya Wiguna](https://github.com/FrazaAdityaWiguna)
+
+Feel free to reach out for any questions or suggestions!
