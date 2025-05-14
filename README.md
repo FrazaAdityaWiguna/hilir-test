@@ -1,6 +1,6 @@
 # 🚀 Ad Performance Summary
 
-A brief description of the project, its purpose, and its key features.
+This project involves developing a comprehensive dashboard to monitor and track ad performance effectively.
 
 ## ✅ How to Run the Project
 
