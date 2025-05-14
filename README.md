@@ -12,7 +12,13 @@ This project involves developing a comprehensive dashboard to monitor and track 
    npm install
    ```
 
-2. **Start the development server:**
+2. **Prepare Husky:**
+
+   ```bash
+   npm run prepare
+   ```
+
+3. **Start the development server:**
 
    ```bash
    npm run dev
