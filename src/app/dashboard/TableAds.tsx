@@ -93,16 +93,21 @@ const TableAds: FC<TableAdsProps> = ({ data }) => {
   const handleColumnFiltersChange = (filters: any) => {
     setColumnFilters(filters);
 
-    filters.forEach(({ id, value }: { id: string; value: string }) => {
-      trackEvent("Table", "Filter", `${id}: ${value}`);
-    });
+    const resFilters = filters();
+
+    if (resFilters?.length > 0)
+      resFilters?.forEach(({ id, value }: { id: string; value: string }) => {
+        trackEvent("Table", "Filter", `${id}: ${value}`);
+      });
   };
 
   const handleSortingChange = (sorts: any) => {
     setSorting(sorts);
 
-    if (sorts.length > 0) {
-      const { id, desc } = sorts[0];
+    const resSorts = sorts();
+
+    if (resSorts?.length > 0) {
+      const { id, desc } = resSorts[0];
       trackEvent("Table", "Sort", `${id}: ${desc ? "DESC" : "ASC"}`);
     }
   };
